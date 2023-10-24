@@ -8,7 +8,7 @@ import java.util.List;
 public interface KindService {
     List<GetAllKindsResponse> getAll();
     void add(CreateKindRequest createKindRequest);
-
+    void delete();
 
 
 }
