@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+        http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+    <changeSet id="20231024-1" author="ata">
+        <createTable tableName="kind">
+            <column autoIncrement="true" name="id" type="int">
+                <constraints primaryKey="true"/>
+            </column>
+            <column type="varchar(256)" name="name">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet  author="ata"  id="20231024-2">
+        <insert  catalogName="movieSite"
+                 dbms="postgresql"
+                 schemaName="public"
+                 tableName="kind">
+            <column  name="name"  value="Komedi"/>
+        </insert>
+    </changeSet>
+    <changeSet  author="ata"  id="20231024-3">
+        <insert  catalogName="movieSite"
+                 dbms="postgresql"
+                 schemaName="public"
+                 tableName="kind">
+            <column  name="name"  value="Korku"/>
+        </insert>
+    </changeSet>
+    <changeSet  author="ata"  id="20231024-4">
+        <insert  catalogName="movieSite"
+                 dbms="postgresql"
+                 schemaName="public"
+                 tableName="kind">
+            <column  name="name"  value="Drama"/>
+        </insert>
+    </changeSet>
+    <changeSet  author="ata"  id="20231024-5">
+        <insert  catalogName="movieSite"
+                 dbms="postgresql"
+                 schemaName="public"
+                 tableName="kind">
+            <column  name="name"  value="Aksiyon"/>
+        </insert>
+    </changeSet>
+    <changeSet  author="ata"  id="20231024-6">
+        <insert  catalogName="movieSite"
+                 dbms="postgresql"
+                 schemaName="public"
+                 tableName="kind">
+            <column  name="name"  value="Bilim Kurgu"/>
+        </insert>
+    </changeSet>
+    <changeSet  author="ata"  id="20231024-7">
+        <insert  catalogName="movieSite"
+                 dbms="postgresql"
+                 schemaName="public"
+                 tableName="kind">
+            <column  name="name"  value="Romantizm"/>
+        </insert>
+    </changeSet>
+    <changeSet  author="ata"  id="20231024-8">
+        <insert  catalogName="movieSite"
+                 dbms="postgresql"
+                 schemaName="public"
+                 tableName="kind">
+            <column  name="name"  value="Animasyon"/>
+        </insert>
+    </changeSet>
+
+
+
+</databaseChangeLog>
