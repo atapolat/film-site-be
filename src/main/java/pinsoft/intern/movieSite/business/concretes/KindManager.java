@@ -1,6 +1,6 @@
 package pinsoft.intern.movieSite.business.concretes;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import pinsoft.intern.movieSite.business.abstracts.KindService;
 import pinsoft.intern.movieSite.business.requests.CreateKindRequest;
@@ -12,14 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class KindManager implements KindService {
 
     private KindRepository kindRepository;
-
-    @Autowired
-    public KindManager(KindRepository kindRepository) {
-        this.kindRepository = kindRepository;
-    }
 
     @Override
     public List<GetAllKindsResponse> getAll() {
