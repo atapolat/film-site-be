@@ -1,11 +1,10 @@
 package pinsoft.intern.movieSite.domain.user.api;
 
-import pinsoft.intern.movieSite.domain.user.impl.UserRole;
 import lombok.Builder;
 import lombok.Data;
+import pinsoft.intern.movieSite.domain.user.impl.UserRole;
 
 import java.util.Date;
-import java.util.List;
 
 @Data
 @Builder

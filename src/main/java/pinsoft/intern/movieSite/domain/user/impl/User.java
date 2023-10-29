@@ -1,6 +1,6 @@
 package pinsoft.intern.movieSite.domain.user.impl;
 
-import com.filmmania.library.entity.AbstractEntity;
+import pinsoft.intern.movieSite.library.entity.AbstractEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

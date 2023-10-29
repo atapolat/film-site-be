@@ -1,6 +1,6 @@
 package pinsoft.intern.movieSite.domain.user.impl;
 
-import com.filmmania.domain.user.api.UserDto;
+import pinsoft.intern.movieSite.domain.user.api.UserDto;
 import lombok.Builder;
 import lombok.Data;
 
