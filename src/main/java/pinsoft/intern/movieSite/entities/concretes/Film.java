@@ -22,6 +22,26 @@ public class Film {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "movieDuration")
+    private int movieDuration;
+
+    @Column(name = "visionDate")
+    private int visionDate;
+
+    @Column(name = "leadRoles")
+    private String leadRoles;
+
+    @Column(name = "producer")
+    private String producer;
+
+    @Column(name = "director")
+    private String director;
+
+    @Column(name = "moviePoint")
+    private int moviePoint;
+
+    @ManyToOne
+    @JoinColumn(name = "kind_id")
     private Kind kind;
 
 }

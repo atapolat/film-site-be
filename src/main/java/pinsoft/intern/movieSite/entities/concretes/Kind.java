@@ -1,11 +1,6 @@
 package pinsoft.intern.movieSite.entities.concretes;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,5 +24,6 @@ public class Kind {
     @Column(name = "name")
     private String name;
 
-    List<Film> films;
+    @OneToMany(mappedBy = "kind")
+    private List<Film> films;
 }
