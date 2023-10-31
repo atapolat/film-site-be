@@ -2,7 +2,6 @@ package pinsoft.intern.movieSite.core.utilities.mappers;
 
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
-import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,17 +12,11 @@ public class ModelMapperManager implements ModelMapperService{
 
     @Override
     public ModelMapper forResponse() {
-        this.modelMapper.getConfiguration()
-                .setAmbiguityIgnored(true).
-                setMatchingStrategy(MatchingStrategies.LOOSE);
-        return this.modelMapper;
+        return null;
     }
 
     @Override
     public ModelMapper forRequest() {
-        this.modelMapper.getConfiguration()
-                .setAmbiguityIgnored(true)
-                .setMatchingStrategy(MatchingStrategies.STANDARD);
-        return this.modelMapper;
+        return null;
     }
 }
